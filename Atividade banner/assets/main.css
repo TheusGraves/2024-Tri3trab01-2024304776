@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-position: center 20px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  height: 400vh;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  width: 80vw;
+  margin: 0 auto;
+  margin-bottom: .5vw;
+}
+
+header {
+  position: relative;
+}
+
+header::after {
+  content: " ";
+  position: absolute;
+  background-color: #2C9303;
+  right: 0;
+  top: 10vw;
+  width: 94%;
+  height: 3.3vw;
+  clip-path: polygon(0 0, 99% 15%, 99.2% 100%);
+}
+
+header::before {
+  content: " ";
+  position: absolute;
+  background-color: #1D6904;
+  right: 0;
+  top: 11vw;
+  width: 85%;
+  height: 4.6vw;
+  clip-path: polygon(0 0, 99.3% 63%, 99.4% 100%);
+}
+
+header .logos {
+  display: flex;
+  justify-content: space-around;
+  padding: 2vh 5vw;
+}
+
+header .logos img {
+  height: 8vw;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 6.3vw;
+  font-size: 160%;
+  padding: 0 5vw;
+}
+
+header h1 span:first-of-type {
+  text-transform: uppercase;
+}
+
+header h1 span:first-of-type:has(~ span)::after {
+  content: ":";
+}
+
+header p {
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  padding: 2vw;
+  columns: 2;
+  column-gap: 1.5vw;
+}
+
+footer {
+
+  height: 6vw;
+  background-color: #1D6904 ;
+}
+
+img {
+  height: 20vw;
+  width: 20vw;
+}
